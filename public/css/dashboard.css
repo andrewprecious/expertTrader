@@ -1,0 +1,1576 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  background-color: #032a40;
+}
+/* body */
+
+/* fonts */
+/* poppins */
+.poppinsRegular {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 97%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* roboto */
+.roboto-regular {
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* fonts */
+
+/* header styling starts */
+.fullDashboard {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100vh;
+}
+
+/* dashboard left starts */
+.dashboardLeft {
+  background-color: #003049;
+  border-right: 1px solid rgba(255, 255, 255, 0.105);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  /*  */
+  position: relative;
+}
+
+.navLeftTop {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.105);
+}
+
+.navLeftTop a {
+  text-decoration: none;
+}
+
+.navLeftBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0px 10px;
+}
+
+.dashboardAccountBal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  border-radius: 4px;
+  background: linear-gradient(to right, #ffa500, #ff7f00, #ff4500);
+  padding: 10px 10px;
+}
+
+.moneyDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.moneyDiv p {
+  font-size: 16px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.wallet {
+  border-radius: 4px;
+  background-color: #dc3545;
+  padding: 5px 5px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+/* btns starts */
+.btnsDiv {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btnsDiv .deposit,
+.btnsDiv .invest {
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 8px;
+}
+
+.btnsDiv .deposit {
+  background-color: #6610f2;
+}
+
+.btnsDiv .invest {
+  background-color: teal;
+}
+
+.dashboardRight {
+  overflow: auto;
+}
+
+.btnsDiv .deposit a,
+.btnsDiv .invest a {
+  color: white;
+  text-decoration: none;
+}
+
+.btnsDiv .deposit:hover,
+.btnsDiv .invest:hover {
+  background-color: #dc3545;
+}
+/* btns ends */
+
+.dashboardBoardBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: white;
+}
+
+.linkesItem {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.linkesItem a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.linkesItem i {
+  font-size: 17px;
+}
+
+.linkesItem a:hover {
+  text-decoration: underline;
+}
+
+/* dashboard left ends */
+
+/* ====> DASHBOARD RIGHT SIDE STARTS */
+
+.dashboardRightSide {
+  display: flex;
+  justify-content: space-between;
+  background-color: #003049;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.105);
+  padding: 10px 15px;
+  /* align-items: center; */
+  height: 65px;
+  overflow: auto;
+}
+
+.navRightFirstLink i,
+.navRightSecondLink i {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 7px 8px;
+  background-color: #6f42c1;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navRightFirstLink i:hover,
+.navRightSecondLink i:hover {
+  background-color: #dc3545;
+}
+
+.navRightSecondLink .special {
+  margin-right: 8px;
+  position: relative;
+}
+
+.notify {
+  position: relative;
+  bottom: 40px;
+  right: -26px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.navRightFirstLink .fa-long-arrow-right {
+  display: none;
+}
+
+.dashboardRight {
+  overflow: auto;
+}
+
+/* DASHBOARD RIGHT SIDE ENDS */
+
+/* dashboard toogle starts */
+
+.fullDashboard.toggle {
+  grid-template-columns: 1fr;
+}
+
+.fullDashboard.toggle .navRightFirstLink .fa-long-arrow-right {
+  display: flex;
+}
+
+.fullDashboard.toggle .navRightFirstLink .fa-long-arrow-left {
+  display: none;
+}
+
+.fullDashboard.toggle .dashboardLeft {
+  display: none;
+}
+/* dashboard toggle ends */
+
+/* full dashboard starts */
+.dashboardRightBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 18px;
+}
+
+.accountBalanceShow {
+  background-image: url("https://expertsfxtrade.com/images/chartImage4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.accountBalTitle .accountBalText {
+  color: white;
+  font-size: 32px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.accountBalTitle img {
+  display: none;
+}
+
+.accountBalBody p {
+  color: white;
+  font-size: 55px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.topRightBottom {
+  display: flex;
+  justify-content: center;
+  background-color: #003049;
+  padding: 21px;
+  align-items: center;
+}
+
+.topRightBottom p {
+  font-size: 13px;
+  color: white;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.topRightBottom .submit {
+  /* padding: 12px; */
+  color: #dc3545;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 900;
+  /* background-color: #dc3545; */
+  border: none;
+  font-size: 13px;
+  /* border-radius: 4px; */
+}
+
+.TransactionsScreen {
+  display: none;
+}
+
+.introSec {
+  display: none;
+}
+
+.Transactions {
+  background-color: #1d3557;
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.Transactions .statistic p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 18px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 450;
+}
+
+.Transactions .statistic .bottomLine {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+}
+
+.Transactions .transactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.transactionCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  /* background-color: #dc3545; */
+  /* color: white; */
+  padding: 17px 0px;
+  border-radius: 5px;
+}
+
+.transactionCard i {
+  font-size: 20px;
+  color: #003049;
+}
+
+.Transactions .transactionCard p {
+  font-size: 17px;
+  color: #003049;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.transactGrid .card1 {
+  background-color: #c0ef6e;
+}
+
+.transactGrid .card2 {
+  background-color: #f9cea2;
+}
+
+.transactGrid .card3 {
+  background-color: #f3d338;
+}
+
+.transactGrid .card4 {
+  background-color: #6df338;
+}
+
+/* profit card starts */
+.TransactionCard {
+  background-color: #1d3557;
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.TransactionCard .statistic p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 18px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 450;
+}
+
+.TransactionCard .statistic .bottomLine {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+}
+
+.TransactionCard .transactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.TransactionCard .transactionCard p {
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.profitCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff12;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.profitCard .pdiv1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profitCard .pdiv1 p {
+  font-size: 15px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.464);
+}
+
+.profitCard .pdiv1 .money {
+  color: green;
+}
+
+.profitCard .pdiv1 .color1 {
+  color: #dbeb54;
+}
+
+.profitCard .pdiv1 .color2 {
+  color: white;
+}
+
+.profitCard .pdiv1 .color3 {
+  color: olive;
+}
+/* profit card ends */
+
+/* navigate starts */
+.Navigation {
+  display: none;
+}
+
+/* full dashboard ends */
+
+/* header styling ends */
+
+/* ========> DEPOSIT STYLE STARTS */
+.depositForm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 0px;
+}
+
+.paymentMethod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.selectPayment {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.selectPayment label {
+  font-size: 16px;
+  color: #dc3545;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.selectPayment select {
+  border: 2px dotted teal;
+  background-color: #002f4900;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.527);
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  outline: none;
+}
+
+.selectPayment select:focus {
+  border: 1px solid rgba(0, 128, 128, 0.692);
+}
+
+.selectPayment select option {
+  background-color: #003049;
+  color: white;
+  font-size: 14px;
+}
+
+/* amount starts */
+.amount {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.amount label {
+  font-size: 16px;
+  color: #dc3545;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.amount input {
+  border: 2px dotted teal;
+  background-color: #002f4900;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.527);
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  outline: none;
+}
+
+.amount input:focus {
+  border: 1px solid rgba(0, 128, 128, 0.692);
+}
+/* amount ends */
+
+.container2 {
+  width: 93%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* second div starts*/
+.uploadFile {
+  border: 1px dotted rgba(255, 255, 255, 0.623);
+  border-radius: 7px;
+  padding: 60px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uploadFile label {
+  color: teal;
+  font-size: 30px;
+  opacity: 0.9;
+  position: relative;
+  top: 25px;
+  text-align: center;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.uploadFile input {
+  background-color: transparent;
+  padding: 20px;
+  opacity: 0;
+}
+/* second div ends*/
+
+/* third div starts */
+.reviewDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.reviewDetails h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.637);
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+}
+
+.reviewDetailsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  border: 1px dotted rgba(0, 128, 128, 0.651);
+  padding: 38px;
+  border-radius: 8px;
+}
+
+.reviewAmount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewAmount p {
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.reviewCharge {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewCharge p {
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.paymentType {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentType p {
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total p {
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.reviewDetails button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+/* third div ends */
+
+/* deposit history starts */
+.allDeposits {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.depositHistory {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.depositHistory p {
+  color: #dc3545;
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.depositHistory a {
+  border-radius: 3px;
+  color: white;
+  background-color: #dc3545;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.depositHistoryTable {
+  width: 70%;
+  /* padding: 15px; */
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.depositHistoryTable th {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  color: #003049;
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.depositHistoryTable td {
+  padding: 5px;
+  text-align: center;
+  color: teal;
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.depositHistoryTable tr:nth-child(odd) {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.depositHistoryTable tr:nth-child(even) {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+/* ========> DEPOSIT STYLE ENDS */
+
+/* investment package starts */
+.investCards {
+  padding: 40px 0px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 15px;
+  column-gap: 120px;
+}
+
+.investCards h3 {
+  font-size: 20px;
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 15px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.container3 {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardContainer .cards {
+  background-color: #6e42c1a6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  padding: 8px 6px;
+  border-radius: 4px;
+  width: 230px;
+}
+
+.cardContainer .cards h2 {
+  font-size: 18px;
+  color: #003049;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+}
+
+.cardContainer .cards p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.616);
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.cardBtn {
+  width: 100%;
+  background-color: #dc3546bd;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 4px;
+  border: none;
+}
+
+.cardBtn a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.616);
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+}
+
+/* investment package ends */
+
+/* trade logs starts */
+.RightSide {
+  background-color: #003049;
+  height: 100vh;
+}
+
+.allTrades {
+  background-color: #032a40;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tradeLogsTable {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+  border-collapse: collapse;
+}
+
+.tradeLogHistory {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tradeLogHistory p {
+  color: #dc3545;
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 380;
+}
+
+.tradeLogHistory a {
+  text-decoration: none;
+  background-color: #dc3545;
+  padding: 4px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* table */
+
+.tradeLogsTable table {
+  border: none;
+}
+
+.tradeLogsTable th {
+  height: 50px;
+  padding: 10px;
+  color: #003049;
+  font-size: 15px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.tradeLogsTable td {
+  padding: 5px;
+  text-align: center;
+  color: teal;
+  font-size: 15px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 390;
+}
+
+.tradeLogsTable tr:nth-child(even) {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.tradeLogsTable tr:nth-child(odd) {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+/* trade logs ends */
+
+/* transaction starts */
+.allTransactions {
+  background-color: #032a40;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Transaction {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.transactionHistoryTable {
+  width: 70%;
+  /* padding: 15px; */
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.transactionHistoryTable th {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 7px;
+  font-weight: 500;
+  color: #003049;
+  font-size: 14px;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.transactionHistoryTable td {
+  padding: 4px;
+  text-align: center;
+  color: teal;
+  font-size: 14px;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.transactionHistoryTable tr:nth-child(odd) {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.transactionHistoryTable tr:nth-child(even) {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.Transaction p {
+  color: #dc3545;
+  font-size: 17px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 380;
+}
+
+.Transaction a {
+  text-decoration: none;
+  background-color: #dc3545;
+  padding: 4px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+}
+/* transaction styles ends */
+
+/* withdrawl starts */
+.withdrawlMethod {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* wallet starts */
+.walletAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.walletAddress label {
+  font-size: 16px;
+  color: #dc3545;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.walletAddress input {
+  border: 2px dotted teal;
+  background-color: #002f4900;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.527);
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  outline: none;
+}
+
+.walletAddress input:focus {
+  border: 1px solid rgba(0, 128, 128, 0.692);
+}
+
+.reviewDetails h4 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.637);
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.mrg20 {
+  margin-top: 50px;
+}
+
+/* wallet  ends */
+
+/* withdrawl ends */
+
+/* settings starts */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0px;
+}
+
+.settings h3 {
+  color: #dc3545;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+}
+
+.settings img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15dpx;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.TopForm {
+  display: flex;
+  gap: 25px;
+}
+
+.formContents {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.mrg {
+  margin-top: 20px;
+}
+
+.formSpecial {
+  border: 1px dotted rgba(255, 255, 255, 0.623);
+  border-radius: 7px;
+  padding: 3px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formSpecial label {
+  color: rgba(255, 255, 255, 0.651);
+  font-size: 15px;
+  opacity: 0.9;
+  position: relative;
+  top: 25px;
+  text-align: center;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.formSpecial input {
+  background-color: transparent;
+  padding: 20px;
+  opacity: 0;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.formGroup label {
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+.formGroup input {
+  border: 1px dotted rgba(0, 128, 128, 0.747);
+  background-color: #032a40;
+  padding: 10px 10px;
+  border-radius: 4px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.formGroup input:focus {
+  border: 1px solid #dc3546b6;
+}
+
+.saveChanges {
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 4px;
+  width: 100%;
+  font-weight: 400px;
+  cursor: pointer;
+}
+
+.passwordChnage {
+  background-color: #dc3545;
+  color: white;
+  width: 150px;
+  text-decoration: none;
+  padding: 14px 8px;
+  font-size: 14px;
+  text-align: center;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  margin-top: 10px;
+}
+/* settings ends */
+
+/* desktop transactions */
+.TransactionsForDesktop {
+  display: none;
+}
+/* desktop transactions */
+
+/* widget starts */
+.tradingviewWidgetContainerCrypto {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 40px;
+}
+/* widget ends */
+
+/* dash payment method  */
+#paymentMethod {
+  color: white;
+}
+
+.reviewAmountUsd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewAmountUsd p {
+  font-size: 17px;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+}
+
+/* dashboard responsiveness starts */
+/* ===> 910px */
+@media (max-width: 1100px) {
+  .fullDashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardLeft {
+    position: fixed;
+    width: 300px;
+  }
+
+  .btnDiv .deposit {
+    width: 150px;
+  }
+
+  .btnDiv .invest {
+    width: 150px;
+  }
+
+  .navRightFirstLink {
+    z-index: 1;
+  }
+
+  .notify {
+    background-color: #dc3545;
+  }
+
+  .dashboardRightBottom {
+    padding-top: 22px;
+  }
+
+  .navRightFirstLink i,
+  .navRightSecondLink i {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .Transactions .transactGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .transactionCard {
+    padding: 20px 0px;
+  }
+
+  .Transactions .transactionCard p {
+    font-weight: 900;
+    font-size: 20px;
+  }
+}
+
+/* ===> 1000px */
+@media (max-width: 1000px) {
+  .Transactions {
+    display: none;
+  }
+
+  .introSec {
+    display: flex;
+  }
+
+  .TransactionCard .transactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .accountBalanceShow {
+    height: 140px;
+    position: relative;
+  }
+
+  .accountBalanceShow .accountBalTitle img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    position: absolute;
+    right: 40%;
+    top: 40%;
+    opacity: 0.2;
+  }
+
+  .accountBalTitle .accountBalText {
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.454);
+    padding-bottom: 10px;
+  }
+
+  .accountBalBody p {
+    font-size: 30px;
+  }
+
+  .TransactionsScreen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .transactionCardScreen {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    background-color: #dc3545;
+    color: #032a40d3;
+    padding: 17px 0px;
+    border-radius: 5px;
+  }
+
+  .TransactionsScreen .transactionCardScreen a {
+    text-decoration: none;
+    font-size: 17px;
+    /* font */
+    font-family: "Poppins", system-ui;
+    font-weight: 200;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .TransactionsScreen .card1 {
+    background-color: #c0ef6e;
+  }
+
+  .TransactionsScreen .card2 {
+    background-color: #ddcbf9;
+  }
+
+  .TransactionsScreen .card3 {
+    background-color: #f9cea2;
+  }
+
+  /* container */
+  .container {
+    width: 95%;
+  }
+  /* transaction screen for small screen ends */
+
+  /* navigation starts for small screen */
+  .Navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1d3557;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .Navigation .navigateP {
+    margin-bottom: 10px;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .Navigation .bottomLineN {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.692);
+  }
+
+  .Navigation .navigateGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .Navigation .navigateGrid .navigateCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .Navigation .navigateGrid .navigateCard img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+
+  .Navigation .navigateGrid .navigateCard a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* navigation ends for small screen */
+
+  /* intro starts */
+  .introSec {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5d5fd3;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .leftSideIntro {
+    display: flex;
+    gap: 16px;
+  }
+
+  .leftSideIntro p {
+    font-size: 14px;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .rightSideIntro .iconIntro img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* intro side ends */
+
+/* ===> 764px */
+@media (max-width: 764px) {
+  .notify {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    background-color: #dc3545;
+  }
+}
+
+/* ===> 450px */
+@media (max-width: 450px) {
+  .container {
+    width: 92%;
+  }
+
+  .dashboardLeft {
+    position: fixed;
+    width: 300px;
+    z-index: 1;
+  }
+
+  .btnDiv .deposit {
+    width: 131px;
+  }
+
+  .btnDiv .invest {
+    width: 135px;
+  }
+
+  /* transaction card css for desktop screen but it would also show in small screen starts  */
+  .TransactionsForDesktop {
+    background-color: #1d3557;
+    /* border: 1px solid red; */
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .TransactionsForDesktop .transactGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .TransactionsForDesktop .statistic p {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Poppins", system-ui;
+    font-weight: 450;
+  }
+
+  .TransactionsForDesktop .statistic .bottomLine {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+  }
+}
+/* dashboard responsiveness ends */
+
+/* deposit responsiveness starts */
+/* ===> 1200px */
+@media (max-width: 1200px) {
+  .dashboardLeft {
+    z-index: 1;
+    height: 100vh;
+  }
+}
+
+/* ===> 800px */
+@media (max-width: 800px) {
+  .paymentMethod {
+    grid-template-columns: 1fr;
+  }
+
+  .withdrawlMethod {
+    grid-template-columns: 1fr;
+  }
+
+  .allDeposits {
+    overflow: auto;
+  }
+
+  .container2 {
+    width: 90%;
+  }
+
+  .depositHistory {
+    width: 100%;
+  }
+
+  .depositHistoryTable {
+    width: 100%;
+  }
+}
+
+/* ===> 320px */
+@media (max-width: 320px) {
+  .reviewDetailsDiv {
+    padding: 20px;
+  }
+
+  .allDeposits {
+    overflow: auto;
+  }
+}
+/* deposit responsiveness ends */
+
+/* investment package responsiveness starts */
+/* ===> 1100px */
+@media (max-width: 1100px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+/* investment package responsiveness ends */
+
+/* settings responsiveness startss */
+/* ===> 1100px */
+@media (max-width: 1100px) {
+  .TopForm {
+    flex-direction: column;
+  }
+}
+/* settings responsiveness ends */

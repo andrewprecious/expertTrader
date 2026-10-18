@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/dashboardHead') %>
+  <body onload="hideSidebar()">
+    <!-- <body> -->
+    <div class="fullDashboard">
+      <!-- dashboard Left -->
+      <%- include('../partials/dashboardLeft') %>
+
+      <!-- dashboard Right -->
+      <div class="dashboardRight">
+        <!-- dashboard Right Top -->
+        <%- include('../partials/dashboardRight') %>
+
+        <!-- dashboard right bottom -->
+        <div class="dashboardRightBottom container">
+          <div class="topRightBottom">
+            <p>verify your identity.</p>
+            <button class="submit">Submit Now</button>
+          </div>
+
+          <!--  div for small screen (only ffrom 450 down) starts -->
+          <div class="introSec">
+            <div class="leftSideIntro">
+              <div class="imgIntro">
+                <img src="" alt="pic" />
+                <p>user</p>
+              </div>
+              <div class="rateIntro">
+                <p>Hi, Codebadger</p>
+                <p>⭐⭐⭐</p>
+              </div>
+            </div>
+            <div class="rightSideIntro">
+              <div class="iconIntro">
+                <img
+                  src="https://ebitchaintrade.co/trade/assets/global/images/sCQgIyl0OKzFiO73nmWF.svg"
+                  alt="pic"
+                />
+              </div>
+            </div>
+          </div>
+          <!--  div for small screen (only ffrom 450 down) starts -->
+
+          <!-- second right bottom div -->
+          <div class="accountBalanceShow">
+            <div class="accountBalTitle">
+              <img
+                src="https://expertsfxtrade.com/images/wallet-shadow.png"
+                alt="pic"
+              />
+              <div class="accountBalText">Account Balance</div>
+              <div class="walletDiv"></div>
+            </div>
+            <div class="accountBalBody"><p>$5,000.54</p></div>
+          </div>
+          <!-- third right bottom div -->
+          <div class="Transactions">
+            <!-- top statistic -->
+            <div class="statistic">
+              <p>All Statistics</p>
+              <p class="bottomLine"></p>
+            </div>
+
+            <!-- transact grid  -->
+            <div class="transactGrid">
+              <!-- first transaction card -->
+              <div class="transactionCard card1">
+                <i class="fa fa-folder-open special" aria-hidden="true"></i>
+                <p>All Transactions(Including Profile alerts)</p>
+                <p>1</p>
+              </div>
+              <!-- second transaction card -->
+              <div class="transactionCard card2">
+                <i class="fa fa-sign-in special" aria-hidden="true"></i>
+                <p>All Deposits</p>
+                <p>1</p>
+              </div>
+              <!-- third transcation card -->
+              <div class="transactionCard card3">
+                <i class="fa fa-sign-out special" aria-hidden="true"></i>
+                <p>All Withdrawl</p>
+                <p>1</p>
+              </div>
+              <!-- forth transcation card -->
+              <div class="transactionCard card4">
+                <i class="fa fa-sign-out special" aria-hidden="true"></i>
+                <p>All Investments</p>
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- for small screens starts -->
+          <div class="TransactionsScreen">
+            <!-- transact grid  -->
+
+            <!-- first transaction card -->
+            <div class="transactionCardScreen card1">
+              <i class="fa fa-sign-in special" aria-hidden="true"></i>
+              <a href="/users/deposit">Deposit</a>
+            </div>
+            <!-- second transaction card -->
+            <div class="transactionCardScreen card2">
+              <i class="fa fa-bar-chart special" aria-hidden="true"></i>
+              <a href="#">History</a>
+            </div>
+            <!-- third transcation card -->
+            <div class="transactionCardScreen card3">
+              <i class="fa fa-bell special" aria-hidden="true"></i>
+              <a href="/users/withdrawl">Withdrawl</a>
+            </div>
+          </div>
+
+          <!-- second div for small screens -->
+          <div class="Navigation">
+            <!-- top statistic -->
+            <div class="allNavigate">
+              <p class="navigateP">All Navigation</p>
+              <p class="bottomLineN"></p>
+            </div>
+
+            <!-- transact grid  -->
+            <div class="navigateGrid">
+              <!-- second transaction card -->
+              <div class="navigateCard">
+                <img
+                  src="https://expertsfxtrade.com/images/schema-log.png"
+                  alt="pic"
+                />
+                <a href="/users/tradeLogs">Trade Logs</a>
+              </div>
+              <!-- third transcation card -->
+              <div class="navigateCard">
+                <img
+                  src="https://expertsfxtrade.com/images/transactions.png"
+                  alt="pic"
+                />
+                <a href="/users/transactionHistory">Transactions</a>
+              </div>
+              <!-- forth transcation card -->
+              <div class="navigateCard">
+                <img
+                  src="https://expertsfxtrade.com/images/deposit.png"
+                  alt="pic"
+                />
+                <a href="/users/deposit">Deposit</a>
+              </div>
+              <!-- fift transcation card -->
+              <div class="navigateCard">
+                <img
+                  src="https://expertsfxtrade.com/images/deposit-log.png"
+                  alt="pic"
+                />
+                <a href="#">Deposit Log</a>
+              </div>
+              <!-- sixth transcation card -->
+              <div class="navigateCard">
+                <img
+                  src="https://expertsfxtrade.com/images/withdraw.png"
+                  alt="pic"
+                />
+                <a href="/users/withdrawl">Withdrawl</a>
+              </div>
+              <!-- seventh transcation card -->
+              <div class="navigateCard">
+                <img
+                  src="https://expertsfxtrade.com/images/settings.png"
+                  alt="pic"
+                />
+                <a href="/users/settings">Settings</a>
+              </div>
+              <!-- eighth transcation card -->
+              <div class="navigateCard">
+                <img
+                  src="https://expertsfxtrade.com/images/support-ticket.png"
+                  alt="pic"
+                />
+                <a href="#">Support</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- for small screens ends -->
+
+          <!-- forth right bottom div -->
+          <div class="TransactionCard">
+            <!-- top statistic -->
+            <div class="statistic">
+              <p>RECENT Transactions(10)</p>
+              <p class="bottomLine"></p>
+            </div>
+
+            <!-- transact grid  -->
+            <div class="transactGrid">
+              <!-- first transaction card -->
+              <div class="profitCard">
+                <div class="pdiv1">
+                  <p>Profits On Investments</p>
+                  <p class="money">+$1,500.00</p>
+                </div>
+                <div class="pdiv1 color">
+                  <p class="color1">66e2dbbag5567degh879</p>
+                  <p class="color2">0usd fee</p>
+                </div>
+                <div class="pdiv1">
+                  <p>Thu, 12 Sep 2024 11:34:18 GMT</p>
+                  <p class="color3">success</p>
+                </div>
+              </div>
+              <!-- second transaction card -->
+              <div class="profitCard">
+                <div class="pdiv1">
+                  <p>Deposit</p>
+                  <p class="money">+$2,500.00</p>
+                </div>
+                <div class="pdiv1">
+                  <p class="color1">66e2dbbag5567degh879</p>
+                  <p class="color2">0usd fee</p>
+                </div>
+                <div class="pdiv1">
+                  <p>Thu, 12 Sep 2024 11:34:18 GMT</p>
+                  <p class="color3">success</p>
+                </div>
+              </div>
+              <!-- third transcation card -->
+              <div class="profitCard">
+                <div class="pdiv1">
+                  <p>Deposit</p>
+                  <p class="money">+$1000.54</p>
+                </div>
+                <div class="pdiv1">
+                  <p class="color1">66e2dbbag5567degh879</p>
+                  <p class="color2">0usd fee</p>
+                </div>
+                <div class="pdiv1">
+                  <p>Thu, 12 Sep 2024 11:34:18 GMT</p>
+                  <p class="color3">success</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- transaction card for desktop screen but it would also show in small screen starts -->
+          <div class="TransactionsForDesktop">
+            <!-- top statistic -->
+            <div class="statistic">
+              <p>All Statistics</p>
+              <p class="bottomLine"></p>
+            </div>
+
+            <!-- transact grid  -->
+            <div class="transactGrid">
+              <!-- first transaction card -->
+              <div class="transactionCard card1">
+                <i class="fa fa-folder-open special" aria-hidden="true"></i>
+                <p>All Transactions(Including Profile alerts)</p>
+                <p>1</p>
+              </div>
+              <!-- second transaction card -->
+              <div class="transactionCard card2">
+                <i class="fa fa-sign-in special" aria-hidden="true"></i>
+                <p>All Deposits</p>
+                <p>1</p>
+              </div>
+              <!-- third transcation card -->
+              <div class="transactionCard card3">
+                <i class="fa fa-sign-out special" aria-hidden="true"></i>
+                <p>All Withdrawl</p>
+                <p>1</p>
+              </div>
+              <!-- forth transcation card -->
+              <div class="transactionCard card4">
+                <i class="fa fa-sign-out special" aria-hidden="true"></i>
+                <p>All Investments</p>
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <!-- transaction card for desktop screen but it would also show in small screen ends-->
+
+          <!-- FIFTH RIGHT BOTTOM DIV -->
+          <!-- TradingView Widget BEGIN -->
+          <div class="secLeftDiv">
+            <div class="tradingviewWidgetContainerCrypto">
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+                async
+              >
+                {
+                    "autosize": true,
+                    "symbol": "BINANCE:BTCUSDT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "allow_symbol_change": true,
+                    "calendar": false,
+                    "support_host": "https://www.tradingview.com"
+                }
+              </script>
+            </div>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+      </div>
+    </div>
+
+    <!-- link to dashboard js -->
+    <script src="/javascript/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/dashboardHead') %>
+  <body onload="hideSidebar()">
+    <div class="fullDashboard trade">
+      <!-- left side -->
+      <%- include('../partials/dashboardLeft') %>
+
+      <div class="RightSide">
+        <!--  top right -->
+        <%- include('../partials/dashboardRight') %>
+
+        <!-- bottom right -->
+        <div class="allTrades">
+          <div class="tradeLogHistory">
+            <p>Trade Logs(latest 10)</p>
+            <a href="#">See All</a>
+          </div>
+
+          <!-- table -->
+          <table class="tradeLogsTable">
+            <tr>
+              <th>id</th>
+              <th>Type</th>
+              <th>Date</th>
+              <th>Amount(USD)</th>
+              <th>Returns Rate</th>
+            </tr>
+            <tr>
+              <td>1234tr33re1</td>
+              <td>Basic</td>
+              <td>24-06-24</td>
+              <td>100</td>
+              <td>10% daily</td>
+            </tr>
+            <tr>
+              <td>1234tr33re1</td>
+              <td>Basic</td>
+              <td>24-06-24</td>
+              <td>100</td>
+              <td>10% daily</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- link to dashboard js -->
+    <script src="/javascript/dashboard.js"></script>
+  </body>
+</html>

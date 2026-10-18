@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <%- include("./partials/head") %>
+  <body>
+    <%- include('./partials/navbar') %>
+    <!-- <h1>Welcome to the Homepage</h1> -->
+
+    <!-- html section one div -->
+
+    <!-- scetionfirst starts -->
+    <section class="sectionFirst container">
+      <!-- top div -->
+      <div class="secTop">
+        <h1>
+          A trusted and secure <br />
+          cryptocurrency <br />
+          Investment Platform.
+        </h1>
+        <p>Combining A Transparent Trading And Investment Environment</p>
+      </div>
+
+      <!-- widget (ticker tape) -->
+      <div>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"></div>
+          <script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+            async
+          >
+              {
+              "symbols": [
+                {
+                  "proName": "FOREXCOM:SPXUSD",
+                  "title": "S&P 500 Index"
+                },
+                {
+                  "proName": "FOREXCOM:NSXUSD",
+                  "title": "US 100 Cash CFD"
+                },
+                {
+                  "proName": "FX_IDC:EURUSD",
+                  "title": "EUR to USD"
+                },
+                {
+                  "proName": "BITSTAMP:BTCUSD",
+                  "title": "Bitcoin"
+                },
+                {
+                  "proName": "BITSTAMP:ETHUSD",
+                  "title": "Ethereum"
+                }
+              ],
+              "showSymbolLogo": true,
+              "isTransparent": false,
+              "displayMode": "adaptive",
+              "colorTheme": "dark",
+              "locale": "en"
+            }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </div>
+
+      <!-- bottom div -->
+      <div class="secBottom grid">
+        <!-- left side botttom -->
+        <div class="secBottomLeft">
+          <h1>
+            The most advance and secure <br />
+            cryptocurrency platform.
+          </h1>
+          <p>
+            We strongly believe investing with us is a sure recipe for success.
+            Let’s think, <br />
+            explore and dominate the market, all for you! You don’t have to
+            consider the risk of <br />
+            investing in capital market, we can manage your investment. You
+            would never regret it.
+          </p>
+          <div class="bottomDivList">
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Live Technical Analysis</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Live Market Data</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Live Cryptocurrency Price</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Deposit & Withdraw</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Buy & Sell</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Coin Listing</p>
+            </div>
+          </div>
+        </div>
+        <!-- right side bottom -->
+        <div class="secBottomRight">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
+              async
+            >
+                {
+                "colorTheme": "dark",
+                "dateRange": "12M",
+                "showChart": true,
+                "locale": "en",
+                "largeChartUrl": "",
+                "isTransparent": false,
+                "showSymbolLogo": true,
+                "showFloatingTooltip": false,
+                "width": "400",
+                "height": "550",
+                "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                "gridLineColor": "rgba(42, 46, 57, 0)",
+                "scaleFontColor": "rgba(209, 212, 220, 1)",
+                "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                "tabs": [
+                  {
+                    "title": "Indices",
+                    "symbols": [
+                      {
+                        "s": "FOREXCOM:SPXUSD",
+                        "d": "S&P 500 Index"
+                      },
+                      {
+                        "s": "FOREXCOM:NSXUSD",
+                        "d": "US 100 Cash CFD"
+                      },
+                      {
+                        "s": "FOREXCOM:DJI",
+                        "d": "Dow Jones Industrial Average Index"
+                      },
+                      {
+                        "s": "INDEX:NKY",
+                        "d": "Nikkei 225"
+                      },
+                      {
+                        "s": "INDEX:DEU40",
+                        "d": "DAX Index"
+                      },
+                      {
+                        "s": "FOREXCOM:UKXGBP",
+                        "d": "FTSE 100 Index"
+                      }
+                    ],
+                    "originalTitle": "Indices"
+                  },
+                  {
+                    "title": "Futures",
+                    "symbols": [
+                      {
+                        "s": "CME_MINI:ES1!",
+                        "d": "S&P 500"
+                      },
+                      {
+                        "s": "CME:6E1!",
+                        "d": "Euro"
+                      },
+                      {
+                        "s": "COMEX:GC1!",
+                        "d": "Gold"
+                      },
+                      {
+                        "s": "NYMEX:CL1!",
+                        "d": "WTI Crude Oil"
+                      },
+                      {
+                        "s": "NYMEX:NG1!",
+                        "d": "Gas"
+                      },
+                      {
+                        "s": "CBOT:ZC1!",
+                        "d": "Corn"
+                      }
+                    ],
+                    "originalTitle": "Futures"
+                  },
+                  {
+                    "title": "Bonds",
+                    "symbols": [
+                      {
+                        "s": "CBOT:ZB1!",
+                        "d": "T-Bond"
+                      },
+                      {
+                        "s": "CBOT:UB1!",
+                        "d": "Ultra T-Bond"
+                      },
+                      {
+                        "s": "EUREX:FGBL1!",
+                        "d": "Euro Bund"
+                      },
+                      {
+                        "s": "EUREX:FBTP1!",
+                        "d": "Euro BTP"
+                      },
+                      {
+                        "s": "EUREX:FGBM1!",
+                        "d": "Euro BOBL"
+                      }
+                    ],
+                    "originalTitle": "Bonds"
+                  },
+                  {
+                    "title": "Forex",
+                    "symbols": [
+                      {
+                        "s": "FX:EURUSD",
+                        "d": "EUR to USD"
+                      },
+                      {
+                        "s": "FX:GBPUSD",
+                        "d": "GBP to USD"
+                      },
+                      {
+                        "s": "FX:USDJPY",
+                        "d": "USD to JPY"
+                      },
+                      {
+                        "s": "FX:USDCHF",
+                        "d": "USD to CHF"
+                      },
+                      {
+                        "s": "FX:AUDUSD",
+                        "d": "AUD to USD"
+                      },
+                      {
+                        "s": "FX:USDCAD",
+                        "d": "USD to CAD"
+                      }
+                    ],
+                    "originalTitle": "Forex"
+                  }
+                ]
+              }
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+      </div>
+    </section>
+    <!-- scetionfirst ends -->
+
+    <!-- section firstLookAlike starts -->
+    <section class="lookAlikeSec container">
+      <div class="secBottom grid2">
+        <!-- right side bottom -->
+        <div class="secBottomRight gridChange">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js"
+              async
+            >
+                {
+                "colorTheme": "dark",
+                "dateRange": "12M",
+                "exchange": "US",
+                "showChart": true,
+                "locale": "en",
+                "largeChartUrl": "",
+                "isTransparent": false,
+                "showSymbolLogo": false,
+                "showFloatingTooltip": false,
+                "width": "400",
+                "height": "550",
+                "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                "gridLineColor": "rgba(42, 46, 57, 0)",
+                "scaleFontColor": "rgba(209, 212, 220, 1)",
+                "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+              }
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+
+        <!-- left side botttom -->
+        <div class="secBottomLeft secBottomLeft2 gridChange2">
+          <h1>
+            Live Market Gainers and Losers <br />
+            tracking
+          </h1>
+          <p>Use our advance tools to keep track of your account.</p>
+          <div class="bottomDivList">
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Live Gainers Tracking</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Live Losers Tracking</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Live Market Data</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Live Cryptocurrency Price</p>
+            </div>
+            <div class="list">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <p>Past Coin Price check</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section firstLookAlike endss -->
+
+    <!-- real estate sec starts -->
+    <section class="realEstateSec gridGap container">
+      <div class="secLeftDiv">
+        <img
+          src="./images/expertTrading.jpg"
+          alt="pic"
+          width="500px"
+          height="400px"
+          class="homeImg"
+        />
+      </div>
+      <!-- right side -->
+      <div class="secRigthDiv">
+        <h1>Real Estate</h1>
+        <p>
+          We invest in the best Real Estate ETF providers to give our clients
+          the best investment avenue to the global Real Estate market. Real
+          Estate ETFs have a broad exposure to the real estate market, and
+          invest in RIFTs, Service Firms and Real Estate Development Companies,
+          which historically offer good returns
+        </p>
+        <!-- second -->
+        <h1>CRYPTOCURRENCY</h1>
+        <p>
+          We believe in the future of blockchain technology. All
+          cryptocurrencies are blockchain based, secure and ensure the
+          impossibility of fraud. They also facilitate cross border transactions
+          and trading because of a reduced need for middlemen. Cryptocurrency
+          also offers a viable alternative to traditional fiat, for clients who
+          seek to hedge their wealth against the pitfalls of a global economic
+          downturn.
+        </p>
+        <!-- third -->
+        <h1>COMMODITIES</h1>
+        <p>
+          Investing in minerals and commodities offers the possibility of high
+          returns, if market fundamentals are understood. As experts in these
+          areas, we understand the commodities market, which is widely
+          considered as a hedge against inflation. Also, mineral resources such
+          as oil, gold, silver and copper have proven to be high demand
+          high-returns resources. The unique standing of Oil within the world’s
+          economic and political sectors, including its volatility, allow us
+          produce consistent returns for short term swing trades and long term
+          timing strategies. Also, we’re invested in finding oppurtunities in
+          alternative energy sectors. By taking advantage of our knowledge and
+          research, clients can increase wealth exponentially.
+        </p>
+      </div>
+    </section>
+    <!-- real estate sec ends -->
+
+    <!-- cards starts -->
+    <section class="cardsSec container">
+      <div class="topDiv">Check out Our investment Packages!</div>
+      <!-- bottom -->
+      <div class="bottomDiv cardGrid">
+        <!-- card1 -->
+        <div class="cards">
+          <h3>Basic</h3>
+          <div class="cardLists">
+            <p>Duration: Weekly</p>
+            <p>Minimum Capital: $100</p>
+            <p>Maximum Capital: $1,500</p>
+            <p>Referral Bonus: 5%</p>
+            <p>Enhanced security</p>
+            <p>24/7 dedicated support</p>
+          </div>
+          <a href="#">Invest now</a>
+        </div>
+        <!-- card 2 -->
+        <div class="cards">
+          <h3>Pro</h3>
+          <div class="cardLists">
+            <p>Duration: Monthly</p>
+            <p>Minimum Capital: $1000</p>
+            <p>Maximum Capital: $10,000</p>
+            <p>Referral Bonus: 5%</p>
+            <p>Enhanced security</p>
+            <p>24/7 dedicated support</p>
+          </div>
+          <a href="#">Invest now</a>
+        </div>
+        <!-- card3 -->
+        <div class="cards">
+          <h3>Standard</h3>
+          <div class="cardLists">
+            <p>Duration: Quarterly</p>
+            <p>Minimum Capital: $5000</p>
+            <p>Maximum Capital: $50,00</p>
+            <p>Referral Bonus: 5%</p>
+            <p>Enhanced security</p>
+            <p>24/7 dedicated support</p>
+          </div>
+          <a href="#">Invest now</a>
+        </div>
+        <!-- card4 -->
+        <div class="cards">
+          <h3>Premium</h3>
+          <div class="cardLists">
+            <p>Duration: Semi-Anually</p>
+            <p>Minimum Capital: $2000</p>
+            <p>Maximum Capital: $100,000</p>
+            <p>Referral Bonus: 5%</p>
+            <p>Enhanced security</p>
+            <p>24/7 dedicated support</p>
+          </div>
+          <a href="#">Invest now</a>
+        </div>
+      </div>
+    </section>
+    <!-- cards ends -->
+
+    <!-- why you choose sec starts -->
+    <section class="whyChooseSec container">
+      <div class="topDiv">
+        Here are a few reasons why you should <br />
+        choose Expertsfxtrade
+      </div>
+      <!-- bottom div -->
+      <div class="bottomDiv">
+        <div class="cardsChoose cardDivGrid">
+          <!-- card 1 -->
+          <div class="card3">
+            <img
+              src="https://expertsfxtrade.com/images/stroge.svg"
+              alt="pic"
+              width="90px"
+              height="80px"
+            />
+            <p>Secure storage</p>
+            <p>
+              To secure client's data, Expertsfxtrade resides on a dedicated
+              server equipped with DDoS protection and SSL certificate, so
+              attacks are virtually impossible.
+            </p>
+          </div>
+          <!-- card2 -->
+          <div class="card3">
+            <img
+              src="https://expertsfxtrade.com/images/finslogo.png"
+              alt="pic"
+              width="90px"
+              height="80px"
+              class="cardSpecial"
+            />
+            <p>Protected by insurance</p>
+            <p>
+              Finsinsurance is a composite Insurance company licensed to
+              transact Life and Non-Life Insurance business in England. We are
+              dedicated to managing investment portfolios across asset classes
+              with a focus on generating income.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="card3">
+            <img
+              src="https://expertsfxtrade.com/images/managment.svg"
+              alt="pic"
+              width="90px"
+              height="80px"
+            />
+            <p>Industry best practices</p>
+            <p>
+              At Expertsfxtrade, we find value, develop value, and realize value
+              for our clients and our shareholders. We believe innovation, hard
+              work, and dedication are vital ingredients for success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why you choose sec ends -->
+
+    <!-- numbers sec starts -->
+    <section class="numberSec">
+      <div class="numberDiv">
+        <h1>$657B</h1>
+        <p>Quarterly volume traded</p>
+      </div>
+      <div class="numberDiv">
+        <h1>50+</h1>
+        <p>Countries supported</p>
+      </div>
+      <div class="numberDiv">
+        <h1>56+M</h1>
+        <p>Verified users</p>
+      </div>
+    </section>
+    <!-- numbers sec ends -->
+
+    <!-- OUR AWARD PLATFORM sec starts -->
+    <section class="whyChooseSec container">
+      <div class="topDiv">OUR AWARD PLATFORM</div>
+      <!-- bottom div -->
+      <div class="bottomDiv">
+        <div class="cardsChoose cardDivGrid">
+          <!-- card 1 -->
+          <div class="cardAward">
+            <img
+              src="https://expertsfxtrade.com/images/award_13.png"
+              alt="pic"
+              width="90px"
+              height="80px"
+            />
+            <p>Century International Quality Gold ERA Award</p>
+            <p>
+              The prestigious award was given to Elitecryptotrade24 in
+              recognition of our outstanding commitment to Quality and
+              Excellence, particularly in the realm of Customer Satisfaction.
+            </p>
+          </div>
+          <!-- card2 -->
+          <div class="cardAward">
+            <img
+              src="https://expertsfxtrade.com/images/award_10.png"
+              alt="pic"
+              width="90px"
+              height="80px"
+            />
+            <p>Most innovative binary option platform</p>
+            <p>
+              As Steve Jobs once said, innovation distinguishes between leaders
+              and followers. Our innovative approach makes our product shine—and
+              the evidence is in this beautiful accolade.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="cardAward">
+            <img
+              src="https://expertsfxtrade.com/images/award_5.png"
+              alt="pic"
+              width="90px"
+              height="80px"
+              class="bkgColor"
+            />
+            <p>Most Reliable Binary Options Broker</p>
+            <p>
+              Our first priority is the security of our clients' funds. This was
+              recognized by the experts at MasterForex-V, who awarded
+              Ebitchaintrade.co the title of Most Trusted Binary Options Broker.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OUR AWARD PLATFORM sec ends -->
+
+    <!-- latest news sec starts -->
+    <section class="latestNewsSec container">
+      <div class="latestTopDiv">Latest news and key events</div>
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="latestWidget">
+        <div class="tradingview-widget-container">
+          <script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
+            async
+          >
+              {
+              "feedMode": "all_symbols",
+              "isTransparent": false,
+              "displayMode": "regular",
+              "width": 300,
+              "height": 550,
+              "colorTheme": "dark",
+              "locale": "en"
+            }
+          </script>
+        </div>
+      </div>
+      <!-- TradingView Widget END -->
+
+      <!-- bottom side -->
+      <div class="latestBottomDiv">
+        <h1>Get started in a few steps</h1>
+        <div class="cardLatestGrid">
+          <!-- card 1 -->
+          <div class="card4">
+            <div class="num">
+              <p>1</p>
+              <img
+                src="https://expertsfxtrade.com/images/user.svg"
+                alt="pic"
+                width="90px"
+                height="80px"
+              />
+            </div>
+            <p>Create an account</p>
+          </div>
+          <!-- card 2 -->
+          <div class="card4">
+            <div class="num">
+              <p>2</p>
+              <img
+                src="https://expertsfxtrade.com/images/bank.svg"
+                alt="pic"
+                width="90px"
+                height="80px"
+              />
+            </div>
+            <p>Fund your account</p>
+          </div>
+          <!-- card3 -->
+          <div class="card4 padding">
+            <div class="num">
+              <p>3</p>
+              <img
+                src="https://expertsfxtrade.com/images/trade.svg"
+                alt="pic"
+                width="90px"
+                height="80px"
+              />
+            </div>
+            <p>Start Investing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- latest news sec ends -->
+
+    <!-- background image sec starts -->
+    <section class="bkgSec">
+      <h1>
+        Become part of a global community <br />
+        of people who have found their path <br />
+        to the crypto world with Expertsfxtrade <br />
+      </h1>
+      <button>SIGN UP TODAY!</button>
+    </section>
+    <!-- background image sec ends -->
+
+    <!-- logo sec starts  -->
+    <section class="logoSec container">
+      <div class="logoLeft">
+        <img
+          src="/images/ExpertsFxTrade_transparent.png"
+          alt="pic"
+          width="150px"
+          height="90px"
+        />
+        <!-- paragraph -->
+        <p>
+          Expertsfxtrade, trading as Expertsfxtrade of Stock Group Limited is
+          <br />
+          incorporated in Central Europe, with registration number CE– 10090454,
+          <br />
+          authorised and regulated by the Financial Conduct Authority (FCA)
+          <br />
+        </p>
+        <p>© copy-rights, all rights reserved Expertsfxtrade 2015</p>
+        <p>Email: support@expertsfxtrade.com</p>
+      </div>
+      <!-- right-->
+      <div class="logoRight">
+        <p>Useful links</p>
+        <!-- links div -->
+        <div class="linksDiv">
+          <a href="#">Home</a>
+          <a href="#">Contact</a>
+          <a href="#">Market</a>
+          <a href="#">Charts </a>
+          <a href="#">About</a>
+        </div>
+      </div>
+    </section>
+    <!-- logo sec ends  -->
+
+    <!-- footer sec starts -->
+    <footer class="footer">
+      <p>Disclaimer:</p>
+      <p>
+        Before acting on any information on this website you should consider the
+        appropriateness of the information having regard to your objectives,
+        financial situation and needs. The information and advertisements
+        offered on this website are not intended for use by any person in any
+        country or jurisdiction where such use is contrary to the local laws and
+        regulations. Expertsfxtrade is authorized and regulated in various
+        jurisdictions.
+      </p>
+    </footer>
+    <!-- footer sec starts -->
+
+    <!-- Link to JavaScript file -->
+    <script src="/javascript/main.js"></script>
+  </body>
+</html>

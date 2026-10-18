@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/dashboardHead') %>
+  <body>
+    <div class="fullDashboard">
+      <!-- left side -->
+      <%- include('../partials/dashboardLeft') %>
+
+      <div class="RightSide">
+        <!--  top right -->
+        <%- include('../partials/dashboardRight') %>
+
+        <!-- bottom right -->
+        <div class="allTransactions">
+          <div class="Transaction">
+            <p>Transaction History(latest 20)</p>
+            <a href="#">See All</a>
+          </div>
+          <!-- table -->
+          <table class="transactionHistoryTable">
+            <tr>
+              <th>id</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>1234tr33re1</td>
+              <td>$500</td>
+              <td>24-06-24</td>
+              <td class="pending">pending</td>
+            </tr>
+            <tr>
+              <td>1234tr33re1</td>
+              <td>$600</td>
+              <td>26-06-24</td>
+              <td class="pending">pending</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- link to dashboard js -->
+    <script src="/javascript/dashboard.js"></script>
+  </body>
+</html>

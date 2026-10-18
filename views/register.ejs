@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+  <body>
+    <div class="backGroundColorRegister">
+      <section class="regsiterSec">
+        <div class="logo">
+          <img
+            src="/images/ExpertsFxTrade_transparent.png"
+            alt="pic"
+            width="150px"
+            height="70px"
+          />
+        </div>
+
+        <!-- form side -->
+        <form class="formContainerRegister" id="registerForm">
+          <h2>Welcome Back! Login</h2>
+
+          <!-- input side -->
+          <div class="formGroup">
+            <label for="fname"> First Name <span>*</span></label>
+            <input type="text" placeholder="Enter First Name" id="fname" />
+          </div>
+
+          <!--  2nd input group div -->
+          <div class="formGroup">
+            <label for="lname"> Last Name <span>*</span></label>
+            <input type="text" placeholder="Enter Last Name" id="lname" />
+          </div>
+
+          <!-- 3rd input group div -->
+          <div class="formGroup">
+            <label for="email"> Email <span>*</span></label>
+            <input type="text" placeholder="Enter Email" id="email" />
+          </div>
+
+          <!-- 4th input group div -->
+          <div class="formGroup">
+            <label for="country"> Select Country <span>*</span></label>
+            <select name="country" id="country">
+              <option value="">--select country--</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Australia">Australia</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Italy">Italy</option>
+              <option value="Spain">Spain</option>
+              <option value="Japan">Japan</option>
+              <option value="China">China</option>
+              <option value="India">India</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Mexico">Mexico</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Russia">Russia</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="Poland">Poland</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Norway">Norway</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Finland">Finland</option>
+              <option value="Iceland">Iceland</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Greece">Greece</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Romania">Romania</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Peru">Peru</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="New Zealand">New Zealand</option>
+            </select>
+          </div>
+
+          <!-- 5th  input group div -->
+          <div class="formGroup">
+            <label for="password"> Password <span>*</span></label>
+            <input type="password" placeholder="Enter Password" id="password" />
+          </div>
+
+          <!-- last  input group div -->
+          <div class="formGroup">
+            <label for="confirmPassword">Confirm Password <span>*</span></label>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              id="confirmPassword"
+            />
+          </div>
+
+          <!-- flex div -->
+          <div class="flexDiv">
+            <div class="remember">
+              <input type="checkbox" id="agree" />
+              <label for="agree">Remember me</label>
+            </div>
+            <div class="fgtPassword">
+              <a href="#">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="errorContainerRegister" id="errorContainerRegister"></div>
+          <!-- button -->
+          <button class="btn1">Register</button>
+          <!-- bottom flex -->
+          <div class="bottomFlex">
+            <h4>Already have an account?</h4>
+            <a href="/login">Login</a>
+          </div>
+          <!-- line div -->
+        </form>
+      </section>
+    </div>
+
+    <!-- javascript -->
+    <script>
+      const registerForm = document.getElementById("registerForm");
+      const errorContainer = document.getElementById("errorContainerRegister");
+      const button = document.querySelector(".btn1");
+
+      registerForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        button.innerHTML = "please wait....";
+        // console.log("form submitted");
+        // console.log(e.target);
+        const form = e.target;
+
+        //  get form values
+        const fname = form.fname.value;
+        const lname = form.lname.value;
+        const email = form.email.value;
+        const country = form.country.value;
+        const password = form.password.value;
+        const confirmPassword = form.confirmPassword.value;
+        const agree = form.agree.checked;
+
+        // form data to be sent in the request body
+        const formData = {
+          fname: fname,
+          lname: lname,
+          email: email,
+          country: country,
+          password: password,
+          confirmPassword: confirmPassword,
+          agree: agree,
+        };
+
+        console.log("Form data", formData);
+        try {
+          const response = await fetch("/account/register", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          });
+
+          const newUserData = await response.json();
+
+          if (response.ok) {
+            // Registration successful, redirect or do something else
+            alert("You have been registered. Please verify your email.");
+            window.location.href = "/login"; // Redirect to login page
+            button.innerHTML = "Register";
+          } else {
+            // Registration failed, display errors
+            const errorMessages = newUserData.error || "An error occurred.";
+            errorContainer.innerHTML = `${errorMessages}`;
+            button.innerHTML = "Register";
+          }
+        } catch (err) {
+          console.error("Error:", err);
+          errorContainer.innerHTML =
+            "An error occurred. Please try again later.";
+        }
+      });
+    </script>
+  </body>
+</html>

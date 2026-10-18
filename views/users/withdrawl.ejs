@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/dashboardHead') %>
+  <body onload="hideSidebar()">
+    <div class="fullDashboard">
+      <!-- dashboard left -->
+      <%- include('../partials/dashboardLeft') %>
+
+      <!-- dashboard Right -->
+      <div class="depositRight">
+        <!-- top -->
+        <%- include('../partials/dashboardRight') %>
+
+        <!-- deposit bottom -->
+        <form action="" class="depositForm container2">
+          <!-- first div (top) -->
+          <div class="withdrawlMethod">
+            <div class="selectPayment">
+              <label for="payment">Select Payment Method</label>
+              <select name="payment" id="payment">
+                <option value="">--Select Gateway--</option>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="Ethereum">Ethereum</option>
+                <option value="USDT">USDT</option>
+              </select>
+            </div>
+            <!-- amount -->
+            <div class="amount">
+              <label for="amount">Amount(USD)</label>
+              <input
+                type="text"
+                id="amount"
+                name="amount"
+                placeholder="Enter Amount"
+              />
+            </div>
+            <!-- wallet address -->
+            <div class="walletAddress">
+              <label for="wallet">Wallet Address</label>
+              <input
+                type="text"
+                id="wallet"
+                name="wallet"
+                placeholder="Wallet Address"
+              />
+            </div>
+          </div>
+
+          <!-- third div -->
+          <div class="reviewDetails">
+            <h4>Review Details</h4>
+            <div class="reviewDetailsDiv">
+              <!-- first child -->
+              <div class="reviewAmount">
+                <p>Amount(USD)</p>
+                <p class="reviewAmount"></p>
+              </div>
+              <!-- second second -->
+              <div class="reviewCharge">
+                <p>Charge</p>
+                <p>0 USD</p>
+              </div>
+              <!-- Third forth -->
+              <div class="paymentType">
+                <p>Payment Method</p>
+                <p class="payAmount"></p>
+              </div>
+              <!-- last child -->
+              <div class="total">
+                <p>Total(USD)</p>
+                <p class="reviewAmount"></p>
+              </div>
+            </div>
+
+            <!-- btn -->
+            <button>Withdraw</button>
+            <!--  -->
+          </div>
+          <!-- fourth div -->
+          <div class="allDeposits mrg20">
+            <div class="depositHistory">
+              <p>Withdraw History(latest 5)</p>
+              <a href="#">See All</a>
+            </div>
+            <!-- table -->
+            <table class="depositHistoryTable">
+              <tr>
+                <th>id</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>1234tr33re1</td>
+                <td>$500</td>
+                <td>24-06-24</td>
+                <td class="pending">pending</td>
+              </tr>
+              <tr>
+                <td>1234tr33re1</td>
+                <td>$600</td>
+                <td>26-06-24</td>
+                <td class="pending">pending</td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- link to dashboard js -->
+    <script src="/javascript/dashboard.js"></script>
+  </body>
+</html>

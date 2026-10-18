@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+  <body>
+    <% if (success) { %>
+    <div class="error-message">
+      <div class="accessGranted">
+        <img
+          src="/images/success.svg"
+          alt="pic"
+          width="1500px"
+          height="300px"
+          style="margin-top: 50px"
+        />
+      </div>
+
+      <p style="color: green"><%= success %></p>
+      <!-- <img src="" alt="image" /> -->
+    </div>
+    <% } %>
+  </body>
+</html>

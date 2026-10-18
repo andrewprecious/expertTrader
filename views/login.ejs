@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+  <body>
+    <!-- Link to JavaScript file -->
+
+    <div class="backGroundColor">
+      <section class="loginSec">
+        <div class="logo">
+          <img
+            src="/images/ExpertsFxTrade_transparent.png"
+            alt="pic"
+            width="150px"
+            height="70px"
+          />
+        </div>
+
+        <!-- form side -->
+        <form class="formContainer" id="loginForm">
+          <h2>Welcome Back! Login</h2>
+
+          <!-- input side -->
+          <div class="formGroup">
+            <label for="email"> Email <span>*</span></label>
+            <input type="email" placeholder="Enter Email" id="email" />
+          </div>
+          <!-- 2nd input group div -->
+          <div class="formGroup">
+            <label for="password"> Password <span>*</span></label>
+            <input type="password" placeholder="Enter Password" id="password" />
+          </div>
+          <!-- flex div -->
+          <div class="flexDiv">
+            <div class="remember">
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="fgtPassword">
+              <a href="#">Forgot Password?</a>
+            </div>
+          </div>
+          <!-- button -->
+          <button class="btn1" id="btn1">Login</button>
+          <!-- bottom flex -->
+          <div class="bottomFlex">
+            <h4>Don't have an account?</h4>
+            <a href="/register">Create account</a>
+          </div>
+          <!-- line div -->
+          <div class="errorContainer" id="errorContainer"></div>
+        </form>
+      </section>
+    </div>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      const errorContainer = document.getElementById("errorContainer");
+      const button = document.getElementById("btn1");
+
+      loginForm.addEventListener("submit", async (e) => {
+        e.preventDefault(); // prevent default form submission behaviour
+        button.innerHTML = "signing in...";
+
+        const formData = {
+          email: loginForm.email.value,
+          password: loginForm.password.value,
+        };
+
+        console.log(formData);
+
+        try {
+          const response = await fetch("/account/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          });
+
+          const responseData = await response.json();
+
+          if (response.ok) {
+            // Login successful, redirect or do something else
+            window.location.href = "/users/dashboard"; // Redirect to dashboard page
+            button.innerHTML = "Login";
+          } else {
+            // Login failed, display errors
+            const errorMessages = responseData.error || "An error occurred.";
+            errorContainer.innerHTML = `div class="error">${errorMessages}</div>`;
+            button.innerHTML = "Login";
+          }
+        } catch (err) {
+          console.error("Error", err);
+          errorContainer.innerHTML = `<div class="error">An error occurred. Please try again later.</div>`;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+  <body>
+    <%- include('./partials/navbar') %>
+
+    <section class="contactSec">
+      <div class="formLeftContainer">
+        <h1>Send Us a Message</h1>
+        <div class="formInputs">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea name="message" id="message">Message</textarea>
+          <div class="contactErrorDiv"></div>
+          <div class="btn2">Send Message</div>
+        </div>
+      </div>
+      <!-- right side -->
+      <div class="rightSide">
+        <h1>Contact Information</h1>
+        <div class="rightTexts">
+          <div class="iconText">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>Address: 6HPH+W2J, Manama, Bahrain.</p>
+          </div>
+          <!-- div 2 -->
+          <div class="iconText">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>Email: support@expertsfxtrade.com</p>
+          </div>
+          <!-- div 3 -->
+          <div class="iconText">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>Phone: +1 623 281 7435</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link to JavaScript file -->
+    <script src="/javascript/main.js"></script>
+  </body>
+</html>

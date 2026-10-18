@@ -1,0 +1,1708 @@
+/* fonts */
+/* poppins */
+.poppinsRegular {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 90%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* roboto */
+.roboto-regular {
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* fonts */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+body {
+  background-color: #131722;
+}
+
+header {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.719);
+}
+
+.navLeft {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.navLeftLinks {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.navLeftLinks .links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.navLeftLinks .links h4 {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.navLeftLinks .links i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navLeftLinks .links {
+  position: relative;
+  display: flex;
+  gap: 4px;
+}
+
+.navRight {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navRight a {
+  width: 110px;
+  border: 1px solid transparent;
+  background-color: teal;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  font-size: 17px;
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 3px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.navRight a:hover {
+  color: #131722;
+}
+
+/* drop down content */
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  border: 1px solid transparent;
+  background-color: #131722;
+  color: white;
+  padding: 10px 7px;
+  width: 108px;
+  box-shadow: 1px 1px 1px 1px #1a1f2d;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdownContent a:hover {
+  color: teal;
+}
+
+/* Show dropdown content when hovering over the .links container */
+.links:hover .dropdownContent {
+  display: flex;
+}
+
+/* hamburger */
+.hambuger {
+  display: none;
+}
+
+.none2 {
+  display: none;
+}
+
+/*  section first css starts */
+.sectionFirst {
+  padding: 130px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 190px;
+}
+
+.secTop {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  text-align: center;
+  color: white;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.secTop h1 {
+  font-size: 45px;
+}
+
+.secTop p {
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+}
+
+.secBottomLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: white;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.secBottomLeft h1 {
+  font-size: 35px;
+}
+
+.secBottomLeft p {
+  font-size: 13px;
+  /* font */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bottomDivList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bottomDivList .list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bottomDivList .list p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bottomDivList .list i {
+  font-size: 18px;
+  color: teal;
+}
+
+/* section first css ends */
+
+/* look alike sec starts */
+.lookAlikeSec {
+  padding: 0px 0px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+}
+/* look alike sec ends */
+
+/* real estate sec starts */
+.realEstateSec {
+  padding: 10px 0px;
+}
+
+.secLeftDiv {
+  margin-top: 150px;
+}
+
+.secRigthDiv {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.secRigthDiv h1 {
+  font-size: 35px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.secRigthDiv p {
+  font-size: 15px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.gridGap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+/* real estate sec ends */
+
+/* card 4 starts award */
+.cardsSec {
+  padding: 40px 0px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px;
+}
+
+.topDiv {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 60px;
+}
+
+.bottomDiv .cards {
+  border: 1px solid rgba(128, 128, 128, 0.555);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bottomDiv .cards .cardLists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards h3 {
+  font-size: 22px;
+  color: rgba(255, 68, 0, 0.747);
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bottomDiv .cards .cardLists p {
+  color: rgba(255, 255, 255, 0.651);
+  font-size: 17px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bottomDiv .cards a {
+  color: rgba(0, 128, 128, 0.507);
+  font-size: 17px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+/* card 4 ends */
+
+/* why choose sec starts */
+.cardDivGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.whyChooseSec {
+  padding: 40px 0px;
+}
+
+.cardsChoose {
+  margin-top: 30px;
+}
+
+.cardsChoose .card3 {
+  border: 1px solid rgba(128, 128, 128, 0.555);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 10px;
+}
+
+.cardsChoose .card3 p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.712);
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+/* image card 3 */
+.cardsChoose .card3 img {
+  background-color: rgba(255, 255, 255, 0.411);
+}
+
+.cardsChoose .card3 .cardSpecial {
+  background-color: transparent;
+}
+/* why choose sec ends */
+
+/* number sec starts */
+.numberSec {
+  display: flex;
+  gap: 300px;
+  padding: 40px 70px;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: teal;
+  text-align: center;
+}
+
+.numberDiv {
+  color: white;
+}
+
+.numberDiv h1 {
+  font-size: 40px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: bold;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.numberDiv p {
+  font-size: 17px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+/* number sec starts */
+
+/* latest sec starts */
+.latestNewsSec {
+  padding: 130px 0px;
+}
+
+.latestWidget {
+  display: flex;
+  justify-content: center;
+}
+
+.latestTopDiv {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.latestBottomDiv h1 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  margin-top: 180px;
+  margin-bottom: 10px;
+}
+
+.cardLatestGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.card4 {
+  border: 1px solid rgba(128, 128, 128, 0.555);
+  /* padding: 28px; */
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card4 .num {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.card4 .num p {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.507);
+}
+
+.card4 .num img {
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.card4 p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.438);
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.padding {
+  padding-right: 77px;
+}
+/* latest sec ends */
+
+/* background image sec starts */
+.bkgSec {
+  background-image: url("https://rb.gy/b1iln1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 70px;
+}
+
+.bkgSec h1 {
+  font-size: 35px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.bkgSec button {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  font-size: 17px;
+}
+
+/* background image sec ends */
+
+/* logo sec starts */
+.logoSec {
+  padding: 80px 0px;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+}
+
+.logoLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.logoLeft p {
+  color: white;
+  font-size: 19px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.logoRight {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.logoRight p {
+  font-size: 18px;
+  color: white;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logoRight .linksDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.logoRight .linksDiv a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* logo sec ends */
+
+/* footer starts */
+.footer {
+  padding: 60px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer p {
+  color: blue;
+  font-size: 19px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* footer ends */
+
+/* intersection */
+/* Add a transition effect or any other styles for the .show class */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Optionally set initial hidden state */
+/* h1,
+p {
+  opacity: 0;
+  transform: translateY(20px);
+} */
+
+/* heatMap/crossRate/Charts styles starts */
+.TopDiv {
+  display: flex;
+  justify-content: center;
+}
+
+/* heatMap/crossRate/Charts styles ends */
+
+/* about sec starts */
+.about {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tradingview-widget-container {
+  margin-top: 130px;
+}
+
+.gridGapAbout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.aboutTop h1 {
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 120px;
+}
+
+.aboutTop p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.secLeftDiv h1 {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* about sec starts */
+
+/* About===> The world's most popular sec starts */
+.popularGridAbout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.worldMostPopular {
+  padding: 40px 0px;
+}
+
+.cardsChooseAbout {
+  margin-top: 30px;
+}
+
+.cardsChooseAbout .aboutCard {
+  border: 1px solid rgba(128, 128, 128, 0.555);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 10px;
+}
+
+.cardsChooseAbout .aboutCard p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.712);
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+/* About===> The world's most popular sec ends */
+
+/* login section starts */
+.loginSec {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  width: 41%;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.backGroundColor {
+  background-image: url("https://expertsfxtrade.com/images/auth-banner.jpg");
+  height: 100vh;
+  background-size: 1700px 790px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1500px;
+  /* height: 100vh; */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flexDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomFlex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.formContainer h2 {
+  font-size: 23px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.formGroup label {
+  font-size: 20px;
+}
+
+span {
+  color: orangered;
+  font-size: 14px;
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.514);
+  border-radius: 10px;
+  outline: none;
+}
+
+.remember input {
+  font-size: 20px;
+}
+
+.remember label {
+  font-size: 17px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fgtPassword a {
+  text-decoration: none;
+  color: orangered;
+  font-size: 17px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn1 {
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  padding: 17px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.bottomFlex h4 {
+  font-size: 17px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bottomFlex a {
+  text-decoration: none;
+  color: orangered;
+  font-size: 17px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.errorContainer {
+  background-color: rgba(255, 0, 0, 0.201);
+  color: red;
+  font-weight: bold;
+  padding: 5px;
+}
+/* login section starts ends */
+
+/* contact sec starts  */
+.contactSec {
+  padding: 80px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 120%;
+}
+
+.formLeftContainer h1 {
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.formInputs input,
+.formInputs textarea {
+  border: none;
+  padding: 15px 15px;
+  background-color: #131722;
+  outline: color(1, 0, 0);
+  color: gray;
+  font-size: 17px;
+}
+
+.formInputs input:focus {
+  outline: 1px solid teal;
+}
+
+.formInputs textarea:focus {
+  outline: 1px solid teal;
+}
+
+.contactErrorDiv {
+  background-color: rgba(255, 0, 0, 0.201);
+  color: red;
+  font-weight: bold;
+  padding: 6px 5px;
+  margin-top: 10px;
+  width: 340px;
+}
+
+.btn2 {
+  /* padding: 10px 20px; */
+  color: white;
+  background-color: teal;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 340px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 160px;
+}
+
+.rightSide h1 {
+  font-size: 35px;
+  color: white;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.rightTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.iconText {
+  display: flex;
+  gap: 16px;
+  color: white;
+  align-items: center;
+}
+
+.iconText p {
+  font-size: 20px;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.iconText i {
+  font-size: 20px;
+  color: teal;
+}
+/* contact sec ends  */
+
+/* register section starts */
+.backGroundColorRegister {
+  background-image: url("https://expertsfxtrade.com/images/auth-banner.jpg");
+  background-size: 1700px 1000px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.formContainerRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.regsiterSec {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  width: 41%;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  max-height: 100vh;
+  overflow-y: auto;
+  max-width: 1500px;
+  height: 680px;
+}
+
+.errorContainerRegister {
+  background-color: rgba(255, 0, 0, 0.201);
+  color: red;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.regsiterSec::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Hide scrollbar for Firefox */
+.regsiterSec {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* register section ends */
+
+/* award platform in about page */
+.awardPlatform .card3 img {
+  background-color: transparent;
+}
+
+.cardsChoose .cardAward {
+  border: 1px solid rgba(128, 128, 128, 0.555);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 10px;
+}
+
+.cardsChoose .cardAward p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.712);
+  text-align: center;
+  /* fonts */
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+/* header responsiveness starts */
+@media (max-width: 910px) {
+  header {
+    padding: 3px 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    gap: 0;
+  }
+
+  .navLeft {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .none2 {
+    display: flex;
+  }
+
+  /* hambuger */
+  .hambuger {
+    display: block;
+    color: white;
+  }
+
+  .hambuger i {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    cursor: pointer;
+  }
+
+  .navRightContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    display: none;
+    padding: 10px;
+  }
+
+  .navRightContainer.show {
+    display: flex;
+  }
+
+  .navLeftLinks {
+    flex-direction: column;
+    margin-top: 18px;
+  }
+
+  .navLeftLinks .links h4 {
+    font-size: 13px;
+  }
+
+  .navRightContainer .navLeftLinks a {
+    font-size: 13px;
+  }
+
+  .navLeftLinks .links {
+    align-items: center;
+  }
+
+  .navRight {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navRight a {
+    padding: 3px 0px;
+    font-size: 15px;
+    width: 100px;
+  }
+}
+/* header responsiveness ends */
+
+/* section first responsivesness starts */
+@media (max-width: 768px) {
+  .sectionFirst {
+    padding: 160px 20px;
+  }
+
+  .secRigthDiv h1 {
+    font-size: 27px;
+  }
+
+  .secBottomRight {
+    overflow: scroll;
+  }
+
+  .secBottomLeft {
+    margin-left: 0px;
+  }
+
+  .secBottomLeft2 {
+    margin-left: 0px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .secBottomLeft {
+    margin-left: 0px;
+  }
+
+  .secBottomLeft2 {
+    margin-left: 0px;
+  }
+
+  .secBottomRight {
+    display: flex;
+    justify-content: center;
+  }
+
+  .secTop h1 {
+    font-size: 30px;
+  }
+
+  .secTop p {
+    font-size: 15px;
+  }
+
+  .sectionFirst {
+    gap: 160px;
+  }
+
+  .secBottomLeft h1 {
+    font-size: 30px;
+  }
+
+  .secBottomRight img {
+    width: 280px;
+    margin-bottom: 45px;
+  }
+
+  .secLeftDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .secLeftDiv .homeImg {
+    width: 300px;
+    height: 240px;
+  }
+}
+
+/* ==> 400px */
+@media (max-width: 400px) {
+  .secLeftDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .secLeftDiv .homeImg {
+    width: 330px;
+    height: 200px;
+  }
+}
+
+/* ==> 1040pxx */
+@media (max-width: 1040px) {
+  .cardGrid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-content: center;
+  }
+
+  /* .secBottomLeft {
+    margin-left: 70px;
+  }
+
+  .secBottomLeft2 {
+    margin-left: 160px;
+  } */
+
+  .secBottomLeft h1 {
+    font-size: 30px;
+  }
+
+  .secBottomRight img {
+    width: 300px;
+  }
+}
+/* section first responsivesness ends */
+
+/* section lookalike responsivesness starts */
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .gridChange {
+    grid-row: 2/3;
+  }
+
+  .gridChange2 {
+    grid-row: 1/2;
+  }
+
+  .lookAlikeSec {
+    padding: 0px 20px;
+  }
+}
+/* section lookalike responsivesness ends */
+
+/* section realestate/about responsivesnes starts */
+
+/* ===> 1100 */
+@media (max-width: 1100px) {
+  .gridGapAbout {
+    gap: 40px;
+    margin-top: 10px;
+  }
+
+  .secLeftDiv .divImage {
+    width: 300px;
+    height: 200px;
+  }
+
+  .secRigthDiv h1 {
+    font-size: 38px;
+  }
+
+  .popularGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ===> 1100 */
+@media (max-width: 890px) {
+  .secRigthDiv h1 {
+    font-size: 30px;
+  }
+
+  .secRigthDiv p {
+    font-size: 12px;
+  }
+
+  .secLeftDiv .homeImg {
+    width: 380px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridGapAbout {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .realEstateSec {
+    padding: 10px 20px;
+  }
+
+  .gridGap {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .about {
+    padding: 10px 30px;
+  }
+
+  .secLeftDiv {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 25px;
+  }
+
+  .secLeftDiv .divImage {
+    width: 330px;
+    height: 200px;
+    align-self: center;
+  }
+
+  .secRigthDiv {
+    padding: 0px 5px;
+  }
+
+  .secRigthDiv p {
+    font-size: 14px;
+  }
+
+  .secRigthDiv h1 {
+    font-weight: bolder;
+    font-size: 28px;
+  }
+}
+/* section realestate responsivesness ends */
+
+/* the world most popular responsiveness starts */
+/* ===> 1100 */
+@media (max-width: 1100px) {
+  .cardsChooseAbout .aboutCard img {
+    background-color: transparent;
+  }
+
+  .cardsChooseAbout .aboutCard .bkgColor {
+    background-color: white;
+  }
+
+  .popularGridAbout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .worldMostPopular {
+    padding: 40px 0px;
+  }
+}
+/* the world most popular responsiveness starts */
+
+/* card award */
+@media (max-width: 768px) {
+  .cardsChoose .cardAward p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.521);
+  }
+}
+
+/* about responsivesnes starts*/
+/* ===> 768px */
+@media (max-width: 768px) {
+  .about {
+    gap: 0px;
+    padding: 10px 20px;
+  }
+
+  .aboutTop h1 {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+}
+
+/* about responsivesnes ends*/
+
+/* card grid 4 responsiveness starts */
+@media (max-width: 768px) {
+  .cardGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .topDiv {
+    font-size: 28px;
+  }
+}
+/* card grid 4 responsiveness ends */
+
+/* why you choose responsiveness starts */
+@media (max-width: 768px) {
+  .cardDivGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .whyChooseSec {
+    padding: 40px 0px;
+  }
+}
+
+/* ===> 1100px */
+@media (max-width: 1100px) {
+  .cardDivGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .whyChooseSec .topDiv {
+    font-weight: bolder;
+    font-size: 30px;
+  }
+}
+/* why you choose responsiveness starts */
+
+/* numbers sec responsiveness starts */
+
+/* ===> 1100px */
+@media (max-width: 1100px) {
+  .numberSec {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .numberSec {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* numbers sec responsiveness starts */
+
+/* latest sec responsiveness starts */
+
+/* ===> 1100px */
+@media (max-width: 1100px) {
+  .cardLatestGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 780px) {
+  .cardLatestGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .latestNewsSec {
+    padding: 130px 0px;
+  }
+
+  .latestWidget {
+    overflow: scroll;
+  }
+
+  .latestTopDiv {
+    font-size: 30px;
+  }
+
+  .latestBottomDiv h1 {
+    font-size: 30px;
+  }
+}
+/* latest sec responsiveness ends */
+
+/* bkg img responsiveness starts */
+
+/* ===> 1100px */
+@media (max-width: 1100px) {
+  .bkgSec {
+    height: 600px;
+  }
+
+  .bkgSec button {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .bkgSec {
+    height: 600px;
+  }
+
+  .bkgSec h1 {
+    font-size: 30px;
+  }
+}
+/* bkg img responsiveness starts */
+
+/* logo sec responsiveness starts */
+
+/* ===> 1100px */
+@media (max-width: 1200px) {
+  .logoSec {
+    gap: 100px;
+  }
+
+  .logoLeft p {
+    font-size: 16px;
+  }
+  .logoRight .linksDiv a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+  .logoSec {
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 0px;
+  }
+
+  .logoLeft p {
+    font-size: 15px;
+  }
+  .logoRight .linksDiv a {
+    font-size: 20px;
+  }
+
+  .logoRight .linksDiv {
+    flex-wrap: wrap;
+  }
+
+  .logoRight {
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .loginSec {
+    padding: 80px 20px;
+  }
+
+  .logoLeft {
+    width: 307px;
+  }
+
+  .logoRight .linksDiv {
+    flex-wrap: wrap;
+  }
+
+  .logoRight p {
+    text-align: left;
+  }
+}
+/* logo sec responsiveness ends */
+
+/* footer responsiveness starts */
+/* ===> 1100px */
+@media (max-width: 1100px) {
+  .footer p {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 40px 30px;
+  }
+}
+/* footer responsiveness ends */
+
+/* login section responsiveness starts */
+@media (max-width: 1040px) {
+  .loginSec {
+    width: 70%;
+  }
+
+  .backGroundColor {
+    padding: 20px 30px;
+  }
+
+  /* .formContainer {
+    height: 200px;
+  } */
+
+  .remember label {
+    font-size: 14px;
+  }
+
+  .fgtPassword a {
+    font-size: 14px;
+  }
+
+  .bottomFlex h4 {
+    font-size: 14px;
+  }
+
+  .bottomFlex a {
+    font-size: 14px;
+  }
+}
+
+/* ===> 600px */
+@media (max-width: 600px) {
+  .loginSec {
+    width: 80%;
+  }
+}
+
+/* ====> 500 */
+@media (max-width: 500px) {
+  .backGroundColor {
+    padding: 4px 20px;
+  }
+
+  .loginSec {
+    width: 94%;
+  }
+
+  .formContainer h2 {
+    font-size: 19px;
+  }
+
+  .remember label {
+    font-size: 12px;
+  }
+
+  .fgtPassword a {
+    font-size: 12px;
+  }
+
+  .bottomFlex h4 {
+    font-size: 12px;
+  }
+
+  .bottomFlex a {
+    font-size: 12px;
+  }
+}
+
+/* ====> 300 */
+@media (max-width: 370px) {
+  .formContainer {
+    padding: 20px 1px;
+  }
+
+  .backGroundColor {
+    padding: 2px 8px;
+  }
+
+  .bottomFlex h4 {
+    font-size: 10px;
+  }
+}
+/* login section responsiveness ends */
+
+/* contact sec responsiveness starts  */
+@media (max-width: 1080px) {
+  .contactSec {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn2 {
+    padding: 10px;
+  }
+}
+/* contact sec responsiveness ends  */
+
+/* register sec responsiveness starts  */
+@media (max-width: 1080px) {
+  .regsiterSec {
+    width: 70%;
+  }
+
+  .backGroundColorRegister {
+    background-size: 1700px 2000px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+/* ====> 500px */
+@media (max-width: 500px) {
+  .regsiterSec {
+    width: 90%;
+  }
+}
+/* register sec responsiveness ends  */
+
+/* heatMap/crossRates/Charts responsiveness starts */
+/* ====> 500px */
+@media (max-width: 768px) {
+  .TopDiv {
+    overflow: scroll;
+  }
+}
+/* heatMap/crossRates/Charts responsiveness starts */

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/dashboardHead') %>
+  <body onload="hideSidebar()">
+    <div class="fullDashboard">
+      <!-- dashboard left -->
+      <%- include('../partials/dashboardLeft') %>
+
+      <div class="rightSide">
+        <!-- top -->
+        <%- include('../partials/dashboardRight') %>
+
+        <div class="settings container3">
+          <h3>Profile Settings</h3>
+          <!-- second child -->
+          <img
+            src="/images/ExpertsFxTrade_transparent.png"
+            alt="logo"
+            width="140px"
+            height="50px"
+          />
+          <!-- third child -->
+          <form action="" class="formContainer">
+            <div class="TopForm">
+              <!-- first form parent div -->
+              <div class="formContents">
+                <div class="formSpecial">
+                  <label for="fileUpload" class="upload">
+                    <p>
+                      upload photo
+                      <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                    </p>
+                  </label>
+                  <input type="file" name="fileUpload" />
+                </div>
+                <!-- second form group -->
+                <div class="formGroup">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    placeholder="lname"
+                  />
+                </div>
+                <!-- third form group -->
+                <div class="formGroup">
+                  <label for="dbirth">Date of birth</label>
+                  <input
+                    type="date"
+                    name="dbirth"
+                    id="dbirth"
+                    placeholder="dd/mm/yy"
+                  />
+                </div>
+                <!-- forth form group -->
+                <div class="formGroup">
+                  <label for="phone">Phone</label>
+                  <input type="number" name="phone" id="phone" />
+                </div>
+                <!-- fifth form group -->
+                <div class="formGroup">
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" />
+                </div>
+                <!-- sixth form group -->
+                <div class="formGroup">
+                  <label for="zcode">Zip Code</label>
+                  <input type="text" name="zcode" id="zcode" />
+                </div>
+              </div>
+              <!-- second form parent div -->
+              <div class="formContents">
+                <!-- first (second) form group -->
+                <div class="formGroup mrg">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="fname"
+                  />
+                </div>
+                <!-- 2nd (second) form group -->
+                <div class="formGroup">
+                  <label for="gender">Gender</label>
+                  <input
+                    type="text"
+                    name="gender"
+                    id="gender"
+                    placeholder="male"
+                  />
+                </div>
+                <!-- third (second) form group -->
+                <div class="formGroup">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="blah@gmail.com"
+                  />
+                </div>
+                <!-- forth (second) form group -->
+                <div class="formGroup">
+                  <label for="country">Country</label>
+                  <input type="text" name="country" id="country" />
+                </div>
+                <!-- fifth (second) form group -->
+                <div class="formGroup">
+                  <label for="address">Address</label>
+                  <input type="text" name="address" id="address" />
+                </div>
+                <!-- sixth (second) form group -->
+                <div class="formGroup">
+                  <label for="jdate">Joining Date</label>
+                  <input type="text" name="jdate" id="jdate" />
+                </div>
+              </div>
+            </div>
+
+            <!-- btn for form -->
+            <button class="saveChanges">Save Changes</button>
+
+            <!-- change password -->
+            <a href="#" class="passwordChnage">Change Password</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- link to dashboard js -->
+    <script src="/javascript/dashboard.js"></script>
+  </body>
+</html>

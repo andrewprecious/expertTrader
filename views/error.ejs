@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+  <body>
+    <% if (error) { %>
+    <div class="errorMessage">
+      <div class="accessDenied">
+        <img
+          src="/images/undraw_access_denied_re_awnf.svg"
+          alt="pic"
+          width="1500px"
+          height="300px"
+          style="margin-top: 50px"
+        />
+      </div>
+
+      <h3 style="color: white; text-align: center"><%= error %></h3>
+      <!-- <img src="" alt="image" /> -->
+    </div>
+    <% } %>
+  </body>
+</html>

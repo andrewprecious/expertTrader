@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/dashboardHead') %>
+  <body>
+    <div class="fullDashboard">
+      <!-- dashboard left side -->
+      <%- include('../partials/dashboardLeft') %>
+
+      <!-- investment right side -->
+      <div class="investment">
+        <!-- top side -->
+        <%- include('../partials/dashboardRight') %>
+
+        <!-- bottom side -->
+
+        <div class="investCards container3">
+          <h3>Select an investment Package</h3>
+
+          <!-- cards div -->
+          <div class="cardContainer">
+            <!-- first card -->
+            <div class="cards">
+              <h2>Basic</h2>
+              <p>Duration: weekly</p>
+              <p>Minimum Deposit: $500</p>
+              <p>Maximum Deposit: $500,000</p>
+              <p>Referral Bonus: 5%</p>
+              <p>Enhanced security</p>
+              <p>24/7 dedicated support</p>
+              <p>10% daily</p>
+
+              <!-- btn  -->
+              <button class="cardBtn"><a href="#">Invest Now</a></button>
+            </div>
+            <!-- second card -->
+            <div class="cards">
+              <h2>Pro</h2>
+              <p>Duration: 2 month</p>
+              <p>Minimum Deposit: $500</p>
+              <p>Maximum Deposit: $500,000</p>
+              <p>Referral Bonus: 5%</p>
+              <p>Enhanced security</p>
+              <p>24/7 dedicated support</p>
+              <p>10% daily</p>
+
+              <!-- btn  -->
+              <button class="cardBtn"><a href="#">Invest Now</a></button>
+            </div>
+            <!-- third card -->
+            <div class="cards">
+              <h2>Standard</h2>
+              <p>Duration: 180 days</p>
+              <p>Minimum Deposit $2,000</p>
+              <p>Maximum Deposit $500,999</p>
+              <p>Referral Bonus: 5%</p>
+              <p>Enhanced security</p>
+              <p>24/7 dedicated support</p>
+              <p>10% daily</p>
+
+              <!-- btn  -->
+              <button class="cardBtn"><a href="#">Invest Now</a></button>
+            </div>
+            <!-- forth card -->
+            <div class="cards">
+              <h2>Premium</h2>
+              <p>Duration: 540 days</p>
+              <p>Minimum Deposit $60,000</p>
+              <p>Maximum Deposit $unlimited</p>
+              <p>Referral Bonus: 5%</p>
+              <p>Enhanced security</p>
+              <p>24/7 dedicated support</p>
+              <p>10% daily</p>
+
+              <!-- btn  -->
+              <button class="cardBtn"><a href="#">Invest Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- link to dashboard js -->
+    <script src="/javascript/dashboard.js"></script>
+  </body>
+</html>
