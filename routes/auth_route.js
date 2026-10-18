@@ -115,19 +115,29 @@ router.post("/register", async (req, res) => {
     const verificationToken = uuidv4();
 
     const newUser = new User({
-      fname: fname,
-      lname: lname,
-      email: email,
-      country: country,
-      password: password,
-      agree: agree,
-      verificationToken: verificationToken, // Store the unique token
+      fname,
+      lname,
+      email,
+      country,
+      password,
+      agree,
+      isVerified: true,
+      verificationToken: null,
     });
+    // const newUser = new User({
+    //   fname: fname,
+    //   lname: lname,
+    //   email: email,
+    //   country: country,
+    //   password: password,
+    //   agree: agree,
+    //   verificationToken: verificationToken,  Store the unique token
+    // });
 
     const saveUser = await newUser.save();
 
     // Send a verification email to the user
-    sendVerificatonEmail(email, verificationToken);
+    // sendVerificatonEmail(email, verificationToken);
 
     res.status(201).json(saveUser);
   } catch (error) {

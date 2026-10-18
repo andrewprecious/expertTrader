@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const { verifyToken, ensureVerified } = require("../middlewares/verifyToken");
+const { verifyToken } = require("../middlewares/verifyToken");
+// const { verifyToken, ensureVerified } = require("../middlewares/verifyToken");
 const User = require("../models/user_model");
 const Deposit = require("../models/depositModel");
 const multer = require("multer");
@@ -26,7 +27,7 @@ let upload = multer({
 }).single("proofOfPayment"); // use the correct field name
 
 // dashboard
-router.get("/dashboard", verifyToken, ensureVerified, async (req, res) => {
+router.get("/dashboard", verifyToken, async (req, res) => {
   try {
     const loggedInUser = req.user; // decoded user from jwt (contain id and isAdmin)
     // console.log(loggedInUser);
@@ -35,10 +36,24 @@ router.get("/dashboard", verifyToken, ensureVerified, async (req, res) => {
   } catch (err) {
     console.log(err);
     res.locals.error = "internal server error";
-    // Render the error message in the EJS template
+    //  Render the error message in the EJS template
     res.status(500).render("error", { title: "error" });
   }
 });
+
+// router.get("/dashboard", verifyToken, ensureVerified, async (req, res) => {
+//   try {
+//     const loggedInUser = req.user; - decoded user from jwt (contain id and isAdmin)
+//     - console.log(loggedInUser);
+
+//     res.render("users/dashboard", { title: "User-Dashboard" });
+//   } catch (err) {
+//     console.log(err);
+//     res.locals.error = "internal server error";
+//     - Render the error message in the EJS template
+//     res.status(500).render("error", { title: "error" });
+//   }
+// });
 
 // deposit
 router.get("/deposit", (req, res) => {
