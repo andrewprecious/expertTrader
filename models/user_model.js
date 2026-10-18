@@ -89,8 +89,9 @@ const userSchema = new mongoose.Schema(
       type: [String],
     },
 
-    investments: {
-      type: [String],
+    investmentBal: {
+      type: String,
+      default: "0",
     },
 
     transactionHistory: {
